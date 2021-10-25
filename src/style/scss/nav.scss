@@ -1,0 +1,104 @@
+@import "basic";
+
+.navContainer {
+    width: 10rem;
+    height: 100%;
+    padding-left: 0;
+    font-size: 1rem;
+
+    ul {
+        list-style: none;
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
+
+        .selectedLi {
+            color: $font-hover-color;
+        }
+
+        li {
+            padding: 0.5rem 0 1rem 0.5rem;
+            height: 1rem;
+            line-height: 1rem;
+            width: 8rem;
+            color: black;
+
+            &:hover {
+                color: $font-hover-color
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+        }
+    }
+}
+
+.logoutButton {
+    color: red;
+    cursor: pointer;
+    padding-left: 1rem;
+}
+
+.mobileNavContainer {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 0.5px solid $br-color;
+    width: 100%;
+    text-align: center;
+
+    .drawerButton {
+        float: left;
+        line-height: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .mobTitle {
+        font-size: 1.5rem;
+
+    }
+
+}
+
+.leftNav {
+    ul {
+        list-style: none;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .navContainer {
+        display: block;
+    }
+
+    .mobileNavContainer {
+        display: none;
+    }
+
+    .leftNav {
+        display: none;
+    }
+
+    .isShow {
+        display: none;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .navContainer {
+        display: none;
+    }
+
+    .mobileNavContainer {
+        display: block;
+    }
+
+    .leftNav {
+        display: block;
+    }
+
+    .isShow {
+        display: block;
+    }
+}

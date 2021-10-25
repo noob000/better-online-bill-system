@@ -1,0 +1,65 @@
+@import 'basic';
+
+.loginPart {
+    position: relative;
+    top:2rem;
+    width: 35rem;
+    padding: 1rem;
+    margin: 0 auto;
+    border: 1px solid $br-color;
+
+    .titleContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+
+        h2{
+            font-size:1rem;
+            line-height: 1rem;
+            margin:0;
+        }
+        p {
+            color: $font-hover-color;
+            cursor: pointer;
+            margin:0;
+            font-size:0.8rem;
+            line-height: 0.8rem;
+        }
+    }
+
+    .loginContainer {
+        width: 30rem;
+        height: auto;
+        padding: 1rem;
+
+    }
+
+    .registContainer {
+        width: 30rem;
+        height: auto;
+        padding: 1rem;
+    }
+}
+@media only screen and(max-width:626px) {
+    .loginPart{
+        width:100%;
+        height:100%;
+        border:none;
+        .h2{
+            font-size:1rem;
+        }
+        p{
+            font-size:0.8rem;
+        }
+        .loginContainer{
+            width:70%;
+            margin:0 auto;
+        }
+        .registContainer{
+            width:70%;
+            margin:0 auto;
+        }
+    }
+}

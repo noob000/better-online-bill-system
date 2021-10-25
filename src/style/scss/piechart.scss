@@ -1,0 +1,15 @@
+@import 'basic';
+.pieChartFlexContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    .pieChartContainer{
+        width:100%;
+    }
+}
+.highcharts-container{
+    width:100%;
+}
+
+

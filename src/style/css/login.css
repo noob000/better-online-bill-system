@@ -1,0 +1,88 @@
+html {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 300px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+.loginPart {
+  position: relative;
+  top: 2rem;
+  width: 35rem;
+  padding: 1rem;
+  margin: 0 auto;
+  border: 1px solid #DCDCDC;
+}
+
+.loginPart .titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.loginPart .titleContainer h2 {
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0;
+}
+
+.loginPart .titleContainer p {
+  color: #3578e5;
+  cursor: pointer;
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.loginPart .loginContainer {
+  width: 30rem;
+  height: auto;
+  padding: 1rem;
+}
+
+.loginPart .registContainer {
+  width: 30rem;
+  height: auto;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 626px) {
+  .loginPart {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .loginPart .h2 {
+    font-size: 1rem;
+  }
+  .loginPart p {
+    font-size: 0.8rem;
+  }
+  .loginPart .loginContainer {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .loginPart .registContainer {
+    width: 70%;
+    margin: 0 auto;
+  }
+}

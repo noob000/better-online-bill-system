@@ -1,0 +1,21 @@
+@import "basic";
+
+.mainWrapper {
+    display: flex;
+    flex-direction: row;
+    height: 937px;
+    width: 100%;
+
+    .leftContainer {
+        border-right: .5px solid $br-color;
+    }
+
+    .rightContainer {
+        width: 100%;
+    }
+}
+@media screen and (max-width:900px){
+    .mainWrapper{
+        flex-direction: column;
+    }
+}
